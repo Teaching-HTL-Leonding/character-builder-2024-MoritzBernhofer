@@ -1,1 +1,46 @@
-<p>character-builder works!</p>
+<div class="nav-bar">
+  <h3>Character Builder</h3>
+  <h3> Builder</h3>
+  <h3> Randomizer</h3>
+</div>
+
+
+<form>
+  <label for="eye" >Eye:</label> <br>
+  <select  [(ngModel)]="eyeType" name="eye" id="eye">
+    <option>NoEye</option>
+    <option>HalfOpen</option>
+    <option>Closed</option>
+    <option>Open</option>
+  </select> <br>
+
+  <label for="hasHammer">Has Hammer</label><br>
+  <input id="hasHammer" [(ngModel)]="hasHammer" name="hasHammer" type="checkbox"><br>
+
+  <label for="Mouth" >Mouth</label> <br>
+  <select  [(ngModel)]="mouthType" name="mouth" id="Mouth">
+    <option>NoMouth</option>
+    <option>Happy</option>
+    <option>Normal</option>
+    <option>Unhappy</option>
+  </select> <br>
+
+  <label for="rightHandType" >Right Hand</label> <br>
+  <select [(ngModel)]="rightHand" name="rightHandType" id="rightHandType">
+    <option>NoHand</option>
+    <option>Normal</option>
+    <option>Victory</option>
+  </select> <br>
+
+  <label for="hasTail">Has Tail</label><br>
+  <input id="hasTail" [(ngModel)]="hasTail" name="hasTail" type="checkbox"><br>
+</form>
+
+<button (click)="buildImage()" >Build Image</button>
+<button>Feeling lucky...</button>
+
+<br>
+<br>
+<br>
+
+<img [src]="imageSrc()" width="200px" height="200px" alt="guy">

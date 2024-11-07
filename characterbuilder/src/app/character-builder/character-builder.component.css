@@ -1,0 +1,20 @@
+button {
+  background: blue;
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  align-content: space-around;
+}
+.nav-bar h3 {
+  margin: 3vw;
+}
+
+.nav-bar h3:first-child {
+  margin-left: 0;
+}
+
+select, input {
+  margin-bottom: 3vh;
+}
